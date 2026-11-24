@@ -1,4 +1,5 @@
-namespace MyBigasan
+
+namespace PointOfSaleSystem
 {
     public partial class Form1 : Form
     {
