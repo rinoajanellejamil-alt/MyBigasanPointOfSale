@@ -31,6 +31,8 @@
             panel1 = new Panel();
             label1 = new Label();
             panel2 = new Panel();
+            cmbSellingUnit = new ComboBox();
+            cmbCategory = new ComboBox();
             txtSearchProduct = new TextBox();
             txtStock = new TextBox();
             txtPrice = new TextBox();
@@ -38,6 +40,7 @@
             lblSearchProduct = new Label();
             lblStock = new Label();
             lblPrice = new Label();
+            lblSellingUnit = new Label();
             lblCategory = new Label();
             lblProductName = new Label();
             btnAddProduct = new Button();
@@ -52,9 +55,6 @@
             btnDeleteProduct = new Button();
             btnClearProductFields = new Button();
             btnRefreshProducts = new Button();
-            cmbCategory = new ComboBox();
-            lblSellingUnit = new Label();
-            cmbSellingUnit = new ComboBox();
             panel1.SuspendLayout();
             panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
@@ -98,6 +98,24 @@
             panel2.Name = "panel2";
             panel2.Size = new Size(393, 300);
             panel2.TabIndex = 1;
+            // 
+            // cmbSellingUnit
+            // 
+            cmbSellingUnit.FormattingEnabled = true;
+            cmbSellingUnit.Items.AddRange(new object[] { "5 kg", " 10 kg", "25 kg", " 50 kg" });
+            cmbSellingUnit.Location = new Point(197, 204);
+            cmbSellingUnit.Name = "cmbSellingUnit";
+            cmbSellingUnit.Size = new Size(181, 23);
+            cmbSellingUnit.TabIndex = 2;
+            // 
+            // cmbCategory
+            // 
+            cmbCategory.FormattingEnabled = true;
+            cmbCategory.Items.AddRange(new object[] { "Regular-Milled Rice", "Well-Milled Rice", "Sinandomeng", "Dinorado", "Jasmine Rice", "Angelica Rice", "Long Grain Rice", "Brown Rice", "Red Rice", "Glutinous Rice (Malagkit)" });
+            cmbCategory.Location = new Point(197, 67);
+            cmbCategory.Name = "cmbCategory";
+            cmbCategory.Size = new Size(181, 23);
+            cmbCategory.TabIndex = 2;
             // 
             // txtSearchProduct
             // 
@@ -156,6 +174,16 @@
             lblPrice.Size = new Size(106, 17);
             lblPrice.TabIndex = 0;
             lblPrice.Text = "Selling Price (₱)";
+            // 
+            // lblSellingUnit
+            // 
+            lblSellingUnit.AutoSize = true;
+            lblSellingUnit.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lblSellingUnit.Location = new Point(20, 204);
+            lblSellingUnit.Name = "lblSellingUnit";
+            lblSellingUnit.Size = new Size(80, 17);
+            lblSellingUnit.TabIndex = 0;
+            lblSellingUnit.Text = "Selling Unit";
             // 
             // lblCategory
             // 
@@ -288,33 +316,6 @@
             btnRefreshProducts.TabIndex = 2;
             btnRefreshProducts.Text = "Refresh";
             btnRefreshProducts.UseVisualStyleBackColor = false;
-            // 
-            // cmbCategory
-            // 
-            cmbCategory.FormattingEnabled = true;
-            cmbCategory.Location = new Point(197, 67);
-            cmbCategory.Name = "cmbCategory";
-            cmbCategory.Size = new Size(181, 23);
-            cmbCategory.TabIndex = 2;
-            // 
-            // lblSellingUnit
-            // 
-            lblSellingUnit.AutoSize = true;
-            lblSellingUnit.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            lblSellingUnit.Location = new Point(20, 204);
-            lblSellingUnit.Name = "lblSellingUnit";
-            lblSellingUnit.Size = new Size(80, 17);
-            lblSellingUnit.TabIndex = 0;
-            lblSellingUnit.Text = "Selling Unit";
-            // 
-            // cmbSellingUnit
-            // 
-            cmbSellingUnit.FormattingEnabled = true;
-            cmbSellingUnit.Items.AddRange(new object[] { "5 kg", " 10 kg", "25 kg", " 50 kg" });
-            cmbSellingUnit.Location = new Point(197, 204);
-            cmbSellingUnit.Name = "cmbSellingUnit";
-            cmbSellingUnit.Size = new Size(181, 23);
-            cmbSellingUnit.TabIndex = 2;
             // 
             // lblProductTitle
             // 
